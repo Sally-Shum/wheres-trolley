@@ -31,7 +31,11 @@ body {
 .header .container .platform .platform-title {
   margin: 0 25px 0 0;
   font-size: 33px;
-  color: #2020cf;
+  font-weight: 900;
+  color: #004990;
+}
+.header .container .platform .platform-title:hover {
+  color: #fdb845;
 }
 .header .container .platform .platform-wrapper {
   height: 40px;
@@ -60,13 +64,21 @@ body {
 .content .items .item:hover .item-wrapper {
   transform: scale(1.2);
 }
+.content .items .item:hover .item-info {
+  color: #004990;
+}
 .content .items .item .item-wrapper {
   height: 180px;
+  width: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
   transition: transform 0.3s ease;
 }
 .content .items .item .item-wrapper .item-img {
-  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 .content .items .item .item-info .info-row .field {
   font-weight: bold;
